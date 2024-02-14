@@ -1,5 +1,7 @@
 import Card from 'react-bootstrap/Card';
 
+//Componente que genera la card del pokemon
+
 export const PokeCard = ({pokeName, pokeImgUrl, pokeId, pokeWeight}) => {
 
     return (

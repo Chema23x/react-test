@@ -5,6 +5,8 @@ import { Details } from "./Details";
 import { PokeButton } from "./PokeButton";
 import { Row, Col, Container } from "react-bootstrap";
 
+//Componente dentro del cual se mostrarán las cards de los pokemon, sus detalles y el boton para generar un pokemon random
+
 export const ShowContent = () => {
     const [pokemonData, setPokemonData] = useState(null);
     const [error, setError] = useState(null);
@@ -12,6 +14,7 @@ export const ShowContent = () => {
 
     const pokemons = ["charmander", "kyogre", "charizard", "pikachu", "lapras", "kyogre", "lugia", "mew", "treecko", "vulpix", "latias"];
 
+    //Se utiliza el Hook useEffect para utilizar fetch y traer la info de la pokeApi con su respectivo manejo de errores
     useEffect(() => {
         const fetchPokemonData = async () => {
             try {

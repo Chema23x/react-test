@@ -1,5 +1,7 @@
 import Card from 'react-bootstrap/Card';
 
+//Componente que muestra los detalles del pokemon.
+
 export const Details = ({experience, ability, order}) => {
     return (
         <Card style={{ height: "100%"}}>
